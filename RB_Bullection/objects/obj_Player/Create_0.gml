@@ -1,77 +1,52 @@
-/// @description Variables
-// You can write your code in this editor
+/// @description [ Variables ]
 
 
+#region [ Tweakable Variables ]
 
-#region [ Tweakable Values ]
+#region [ Player Movement ]
 
-int_WalkSpeed = 5;
-int_JumpPower = 10;
-int_MaxFallSpeed = 12;
-int_BulletSpeed = 10;
-flp_Gravity = 0.75;
-gunMode = 1;
-gunModeMax = 4;
+#region [ Keybindings ] 
+
+Key_Left = ord("A");
+Key_Right = ord("D");
+Key_Forward = ord("W");
+Key_Backward = ord("S");
+Mouse_LeftButton = mb_left;
+
+#endregion
 
 #endregion
 
 
-#region [ Non-Tweakable Values ]
 
-int_RotSpeed = 10;
-int_XBulletOffset = 10;
-int_YBulletOffset = 5;
-int_vSpeed = 0;
-int_hSpeed = 0;
-int_FaceDirection = 1;
-bln_Grounded = false;
-
-#endregion
+#endregion 
 
 
-#region [ KeyBindings (Tweakable) ]
 
-key_Left = ord("A");
-key_Right = ord("D");
-key_Jump = ord("W");
-key_Shoot = vk_space;
+#region [ Non-Tweakable Variables ]
 
-#endregion
+#region [ Player Movement ]
 
+bln_CanMove = true;
+inst_Var_PlayerMoveSpeed = 6;
 
-#region [ Global Var. ]
-
-global.GameOver = false;
-global.HiScore = 0;
-global.Score = 0;
-global.int_Speed = int_BulletSpeed;
-global.int_Direction = int_FaceDirection;
-
-#endregion
-
-
-#region [ Enums ]
-
-
-enum Enum_GunModes 
+enum Player_Move
 {
-	PISTOL=1, 
-	DUAL_PISTOL=2, 
-	TRI_PISTOL=3, 
-	SAWED_OFF=4,
+	Idle,
+	Move
 }
 
-#endregion
-
-#region [ Score ]
-
-gml_pragma("global", "global.Score = 0;");
-
-ini_open("savedata.ini");
-{
-	global.HiScore = ini_read_real("Stats", "HighScore", 0);
-}
-ini_close();
+enum_PlayerMoveState = Player_Move.Idle;
 
 
 #endregion
+
+#region [ Key Collection & Door Exit ]
+
+
+
+#endregion
+
+#endregion
+
+
