@@ -5,11 +5,12 @@
 Enemy_HP = random_range(50, 100);
 Enemy_Bullet = obj_BulletEnemy;
 EnemyTimer = 0;
-EnemyTime = 10;
+EnemyTime = 1;
 
 
 
-enum EnemyState
+
+enum EnemyStateBoss
 {
 
 	Alive,
@@ -17,6 +18,8 @@ enum EnemyState
 
 }
 
-enum_EnemyState = EnemyState.Alive;
+enum_EnemyState = EnemyStateBoss.Alive;
+
+path_start(Enemy_Path, 5, path_action_continue, true);
 
 #endregion

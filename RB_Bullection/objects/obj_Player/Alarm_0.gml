@@ -1,0 +1,1 @@
+bln_CanShoot = true;

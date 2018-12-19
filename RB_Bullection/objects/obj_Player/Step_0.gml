@@ -70,11 +70,16 @@ if (place_meeting(x, y, obj_Block))
 
 #region [ Player Mouse Shooting ]
 
-if (keyboard_check(Key_Shoot))
+if (bln_CanShoot)
 {
-	var _Bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
-	_Bullet.direction = image_angle;
-	_Bullet.image_angle = image_angle;
-	_Bullet.speed = inst_Var_PlayerBulletSpeed;
+	if (keyboard_check(Key_Shoot))
+	{
+		var _Bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
+		_Bullet.direction = image_angle;
+		_Bullet.image_angle = image_angle;
+		_Bullet.speed = inst_Var_PlayerBulletSpeed;
+		bln_CanShoot = false;
+		alarm[0] = inst_Var_PlayerShootCD;
+	}
 }
 #endregion

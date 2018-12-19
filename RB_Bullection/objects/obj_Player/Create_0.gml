@@ -48,13 +48,15 @@ enum_PlayerMoveState = Player_Move.Idle;
 #region [ Key Collection & Door Exit ]
 
 inst_Var_KeysGathered = 0;
-inst_Var_TotalKeysNeeded = 2;
+inst_Var_TotalKeysNeeded = 5;
 
 #endregion
 
 #region [ Player Mouse Shooting ]
 
 inst_Var_PlayerBulletSpeed = 10;
+bln_CanShoot = true;
+inst_Var_PlayerShootCD = 5;
 
 #endregion
 
