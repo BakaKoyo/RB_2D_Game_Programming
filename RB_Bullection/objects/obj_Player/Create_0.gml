@@ -17,7 +17,11 @@ Mouse_LeftButton = mb_left;
 
 #endregion
 
+#region [ Player Mouse Shooting ]
 
+Key_Shoot = vk_space;
+
+#endregion
 
 #endregion 
 
@@ -45,6 +49,12 @@ enum_PlayerMoveState = Player_Move.Idle;
 
 inst_Var_KeysGathered = 0;
 inst_Var_TotalKeysNeeded = 2;
+
+#endregion
+
+#region [ Player Mouse Shooting ]
+
+inst_Var_PlayerBulletSpeed = 10;
 
 #endregion
 

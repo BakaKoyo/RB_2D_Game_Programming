@@ -68,8 +68,13 @@ if (place_meeting(x, y, obj_Block))
 #endregion
 
 
-#region [ Key Collection & Door Exit ]
+#region [ Player Mouse Shooting ]
 
-
-
+if (keyboard_check(Key_Shoot))
+{
+	var _Bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
+	_Bullet.direction = image_angle;
+	_Bullet.image_angle = image_angle;
+	_Bullet.speed = inst_Var_PlayerBulletSpeed;
+}
 #endregion
