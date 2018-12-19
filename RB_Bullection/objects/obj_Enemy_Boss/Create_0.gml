@@ -3,12 +3,14 @@
 #region [ Player Can Kill Enemy ]
 
 Enemy_HP = random_range(50, 100);
-Enemy_Bullet = obj_BulletEnemy;
+Enemy_Bullet = obj_BulletEnemy2;
 EnemyTimer = 0;
 EnemyTime = 1;
 
 
+bln_CirclePhase = false;
 
+RNG = 0;
 
 enum EnemyStateBoss
 {

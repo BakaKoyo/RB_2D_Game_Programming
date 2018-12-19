@@ -13,11 +13,13 @@ switch(enum_EnemyState)
 	{
 		EnemyTimer = 0;
 		var _EnemyBullet = instance_create_layer(x,y, "Instances", Enemy_Bullet);
-		_EnemyBullet.hspeed = random_range(-3, 3);
-		_EnemyBullet.vspeed = random_range(-3, 3);
-		
-	}	
+		_EnemyBullet.hspeed = random_range(-2, 2);
+		_EnemyBullet.vspeed = random_range(-2, 2);
+
+	}
 	else EnemyTimer++;
+	
+	
 	
 	#endregion
 	

@@ -7,8 +7,6 @@ Enemy_Bullet = obj_BulletEnemy;
 EnemyTimer = 0;
 EnemyTime = 10;
 
-
-
 enum EnemyState
 {
 
