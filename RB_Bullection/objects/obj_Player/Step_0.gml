@@ -70,4 +70,6 @@ if (place_meeting(x, y, obj_Block))
 
 #region [ Key Collection & Door Exit ]
 
+
+
 #endregion

@@ -43,7 +43,8 @@ enum_PlayerMoveState = Player_Move.Idle;
 
 #region [ Key Collection & Door Exit ]
 
-
+inst_Var_KeysGathered = 0;
+inst_Var_TotalKeysNeeded = 2;
 
 #endregion
 

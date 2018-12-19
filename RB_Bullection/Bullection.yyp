@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0be550bb-8d61-4880-8881-20925b8f1776",
+            "Value": {
+                "id": "6e26da73-a903-435b-8fcb-3eb6f6e609fa",
+                "resourcePath": "objects\\obj_ExitDoor\\obj_ExitDoor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0fadc73f-34ee-4834-8e6d-86664323ddea",
             "Value": {
                 "id": "1b9178dc-d06b-424e-a904-73c857af3a76",
@@ -79,11 +87,11 @@
             }
         },
         {
-            "Key": "2963bc1d-2b17-4e52-bad3-7637aac63ec3",
+            "Key": "28b8d7b3-fa56-4590-8666-ccb91ebe61dc",
             "Value": {
-                "id": "a3ee8b7c-dd66-4c73-968a-8cb671574dca",
-                "resourcePath": "objects\\obj_HUD\\obj_HUD.yy",
-                "resourceType": "GMObject"
+                "id": "2a248f17-3a55-4fa1-9b67-b3978d08c22c",
+                "resourcePath": "rooms\\Room_Win\\Room_Win.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -148,6 +156,14 @@
                 "id": "d88f2efd-ec26-41ba-b83b-8ccf186ae9df",
                 "resourcePath": "views\\4d396ddb-d11f-43a4-8135-92df82e9aebd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "50c69eef-3457-4082-8dbb-36929351d40c",
+            "Value": {
+                "id": "8c283cda-ccb5-42b7-af1e-2572d22dd4b0",
+                "resourcePath": "objects\\obj_Keys\\obj_Keys.yy",
+                "resourceType": "GMObject"
             }
         },
         {
